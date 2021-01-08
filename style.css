@@ -1,13 +1,13 @@
-div.section{
+section{
 	padding: 10px;
 }
 div.profile{
 	padding: 0px 20px;
 }
-span.link{
-	display: inline-block;
-	margin: 0px 10px;
-	padding: 0px 10px;
+div.links{
+	padding: 0px 20px;
+	display: flex;
+	justify-content: space-between;
 }
 div.etc{
 	padding: 0px 20px;
