@@ -16,15 +16,13 @@
 - ICPC 2022 … アジア横浜地区大会出場（h**a**unting）
 
 # リンク
-- [Twitter](https://twitter.com/57tggx)
-- [Misskey](https://misskey.io/@five_seven)
-- [GitHub](https://github.com/fiveseven-lambda)
-- [Zenn](https://zenn.dev/toga)
-- [はてなブログ](https://satiseni.hateblo.jp)
-- [SoundCloud](https://soundcloud.com/57tggx)
-- [Mathlog](https://mathlog.info/users/144/articles)
+- Twitter: [@57tggx](https://twitter.com/57tggx)
+- Misskey: [@five_seven@misskey.io](https://misskey.io/@five_seven) [@toga@misskey.sda1.net](https://misskey.sda1.net/@toga) [@57@sushi.ski](https://sushi.ski/@57)
+- GitHub: [fiveseven-lambda](https://github.com/fiveseven-lambda)
+- Zenn: [toga](https://zenn.dev/toga)
+- SoundCloud: [57tggx](https://soundcloud.com/57tggx)
+- Mathlog: [@toga](https://mathlog.info/users/144/articles)
 
 # github.io にあるもの
 - [2標本検定OVL-q](https://fiveseven-lambda.github.io/ovl-test)
-- [化合物から見る代謝経路（書きかけ）](https://fiveseven-lambda.github.io/biochemistry)
 - [Unicode行列括弧](https://fiveseven-lambda.github.io/unicode-matrix)
