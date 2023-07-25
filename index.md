@@ -16,7 +16,7 @@
 - ICPC 2022 … アジア横浜地区大会出場（h**a**unting）
 
 # リンク
-- Twitter: [@57tggx](https://twitter.com/57tggx)
+- 𝕏: [@57tggx](https://x.com/57tggx)
 - Misskey: [@five_seven@misskey.io](https://misskey.io/@five_seven) [@toga@misskey.sda1.net](https://misskey.sda1.net/@toga) [@57@sushi.ski](https://sushi.ski/@57)
 - GitHub: [fiveseven-lambda](https://github.com/fiveseven-lambda)
 - Zenn: [toga](https://zenn.dev/toga)
