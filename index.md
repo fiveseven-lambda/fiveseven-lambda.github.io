@@ -1,7 +1,10 @@
 # プロフィール
 名前：とが
 
-アクセントは「と_が‾」です（「水」と同じ平板型）．
+アクセントは「と_ が‾」です（「水」と同じ平板型）．
+
+# OSS
+Rust や SciPy（Pythonライブラリ）に contribute しています．
 
 # 競プロ
 使用言語：C / C++ / Rust
@@ -15,6 +18,9 @@
 - ICPC 2021 … アジア横浜地区大会出場（**t**oxic）
 - ICPC 2022 … アジア横浜地区大会出場（h**a**unting）
 
+記事
+- [『RustCoder ―― AtCoder と Rust で始める競技プログラミング入門』](https://zenn.dev/toga/books/rust-atcoder)
+
 # リンク
 - 𝕏: [@57tggx](https://x.com/57tggx)
 - Misskey: [@five_seven@misskey.io](https://misskey.io/@five_seven) [@57@sushi.ski](https://sushi.ski/@57)
@@ -22,7 +28,5 @@
 - Zenn: [toga](https://zenn.dev/toga)
 - SoundCloud: [57tggx](https://soundcloud.com/57tggx)
 - Mathlog: [@toga](https://mathlog.info/users/144/articles)
+- ORCID: [0000-0002-4935-3945](https://orcid.org/0000-0002-4935-3945)
 
-# github.io にあるもの
-- [2標本検定OVL-q](https://fiveseven-lambda.github.io/ovl-test)
-- [Unicode行列括弧](https://fiveseven-lambda.github.io/unicode-matrix)
