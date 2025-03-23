@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import { Image } from 'astro:assets';
+import icon from '../assets/icon.jpg';
+import icon2 from '../assets/2331964-2.output.png';
 import RustCoder from '../assets/RustCoder.png';
 ---
 
@@ -17,8 +20,17 @@ import RustCoder from '../assets/RustCoder.png';
 			</Card>
 			<Card>
 				<h2>アイコン</h2>
-				<img src="favicon.jpg"/>
-				<p><a href="https://x.com/Cafrette">@Cafrette</a> さんに書いていただきました。</p>
+				<p>（クリック／タップで拡大）</p>
+				<Image id="icon" class="image" src={icon} alt="とがのアイコン（Cafrette さん）" width="144" />
+				<dialog id="iconDialog">
+					<Image src="/icon.jpg" alt="とがのアイコン" width="1080" height="1080" />
+				</dialog>
+				<p>Cafrette さんに描いていただきました。</p>
+				<Image id="icon2" class="image" src={icon2} alt="とがのアイコン（ふいしゆさん）" width="144" />
+				<dialog id="icon2Dialog">
+					<Image src="/2331964-2.output.png" alt="とがのアイコン" width="400" height="400"/>
+				</dialog>
+				<p>ふいしゆさんに描いていただきました。</p>
 			</Card>
 			<Card>
 				<h2>OSS Contribution</h2>
@@ -35,7 +47,10 @@ import RustCoder from '../assets/RustCoder.png';
 					<li>ICPC 2021 … アジア横浜地区大会出場（<b>t</b>oxic）</li>
 					<li>ICPC 2022 … アジア横浜地区大会出場（h<b>a</b>unting）</li>
 				</ul>
-				<img src={RustCoder.src} alt="とが『RustCoder ―― AtCoder と Rust で始める競技プログラミング入門』の表紙"/>
+				<Image id="rustCoder" src={RustCoder} class="image" alt="とが『RustCoder ―― AtCoder と Rust で始める競技プログラミング入門』の表紙" width="144" />
+				<dialog id="rustCoderDialog">
+					<Image src="/RustCoder.png" alt="とが『RustCoder ―― AtCoder と Rust で始める競技プログラミング入門』の表紙" width="1043" height="1459" />
+				</dialog>
 				<p>『RustCoder――AtCoder と Rust で始める競技プログラミング入門』は<a href="https://zenn.dev/toga/books/rust-atcoder/viewer/intro">終了しました</a>。</p>
 			</Card>
 			<Card>
@@ -67,6 +82,15 @@ import RustCoder from '../assets/RustCoder.png';
 	<footer>
 	</footer>
 </Layout>
+
+<script>
+	icon.addEventListener("click", () => iconDialog.showModal());
+	iconDialog.addEventListener("click", () => iconDialog.close());
+	icon2.addEventListener("click", () => icon2Dialog.showModal());
+	icon2Dialog.addEventListener("click", () => icon2Dialog.close());
+	rustCoder.addEventListener("click", () => rustCoderDialog.showModal());
+	rustCoderDialog.addEventListener("click", () => rustCoderDialog.close());
+</script>
 
 <style>
 	body {
@@ -110,9 +134,17 @@ import RustCoder from '../assets/RustCoder.png';
 		}
 	}
 
+	.image {
+		width: 30%;
+		max-width: 144px;
+		cursor: pointer;
+	}
+	dialog {
+		text-align: center;
+	}
 	img {
-		width: 60%;
-		max-width: 270px;
+		width: 100%;
+		height: auto;
 	}
 
 	h2, p {
