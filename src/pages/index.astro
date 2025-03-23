@@ -78,10 +78,14 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
 	body {
+		font-family: "Noto Sans CJK JP", sans-serif;
 		font-feature-settings: "palt";
 	}
 	header, footer {
 		text-align: center;
+	}
+	footer {
+		padding: 2em;
 	}
 	.background {
 		border-style: solid none;
@@ -91,7 +95,7 @@ import Layout from '../layouts/Layout.astro';
 	}
 	main {
 		margin: 0 auto;
-		padding: 8px;
+		padding: .5em;
 	}
 	@media (min-width: 640px) {
 		main {
@@ -115,18 +119,15 @@ import Layout from '../layouts/Layout.astro';
 	}
 
 	.card-outer {
-		padding: 8px;
+		padding: .5em;
 	}
 	.card-inner {
 		background-color: white;
-		padding: 8px 16px;
+		padding: .5em 1em;
 		border-radius: 16px;
 	}
-	h2 {
-		margin: 8px 8px;
-	}
-	p {
-		margin: 8px 8px;
+	h2, p {
+		margin: .3em;
 	}
 	.underline {
 		border-bottom: 1px solid;
