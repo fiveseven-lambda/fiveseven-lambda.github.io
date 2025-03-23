@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import RustCoder from '../assets/RustCoder.png';
 ---
 
 <Layout>
@@ -16,7 +17,7 @@ import Card from '../components/Card.astro';
 			</Card>
 			<Card>
 				<h2>アイコン</h2>
-				<img width="108px" src="favicon.jpg"/>
+				<img src="favicon.jpg"/>
 				<p><a href="https://x.com/Cafrette">@Cafrette</a> さんに書いていただきました。</p>
 			</Card>
 			<Card>
@@ -34,12 +35,16 @@ import Card from '../components/Card.astro';
 					<li>ICPC 2021 … アジア横浜地区大会出場（<b>t</b>oxic）</li>
 					<li>ICPC 2022 … アジア横浜地区大会出場（h<b>a</b>unting）</li>
 				</ul>
+				<img src={RustCoder.src} alt="とが『RustCoder ―― AtCoder と Rust で始める競技プログラミング入門』の表紙"/>
+				<p>『RustCoder――AtCoder と Rust で始める競技プログラミング入門』は<a href="https://zenn.dev/toga/books/rust-atcoder/viewer/intro">終了しました</a>。</p>
 			</Card>
 			<Card>
 				<h2>研究</h2>
 				<p>主に統計や AI をやっています。</p>
-				<p>Atsushi Komaba, Hisashi Johno, and Kazunori Nakamoto. A novel statistical approach for two-sample testing based on the overlap coefficient. <i>Journal of Mathematical Sciences, The University of Tokyo</i>, 30(2):205–240, 2023.</p>
-				<p>Ryota Tozuka, Hisashi Johno, Akitomo Amakawa, Junichi Sato, Mizuki Muto, Shoichiro Seki, Atsushi Komaba, and Hiroshi Onishi. Application of NotebookLM, a large language model with retrieval‑augmented generation, for lung cancer staging. <i>Japanese Journal of Radiology</i>, 2024. Online ahead of print.</p>
+				<ul>
+					<li>Atsushi Komaba, Hisashi Johno, and Kazunori Nakamoto. A novel statistical approach for two-sample testing based on the overlap coefficient. <i>Journal of Mathematical Sciences, The University of Tokyo</i>, 30(2):205–240, 2023.</li>
+					<li>Ryota Tozuka, Hisashi Johno, Akitomo Amakawa, Junichi Sato, Mizuki Muto, Shoichiro Seki, Atsushi Komaba, and Hiroshi Onishi. Application of NotebookLM, a large language model with retrieval‑augmented generation, for lung cancer staging. <i>Japanese Journal of Radiology</i>, 2024. Online ahead of print.</li>
+				</ul>
 				<p>他に日本磁気共鳴医学会、医療の質・安全学会など。</p>
 			</Card>
 			<Card>
@@ -103,6 +108,11 @@ import Card from '../components/Card.astro';
 		main {
 			max-width: 1280px;
 		}
+	}
+
+	img {
+		width: 60%;
+		max-width: 270px;
 	}
 
 	h2, p {
