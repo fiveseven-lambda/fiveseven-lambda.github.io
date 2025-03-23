@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
 ---
 
 <Layout>
@@ -8,68 +9,54 @@ import Layout from '../layouts/Layout.astro';
 	</header>
 	<div class="background">
 		<main>
-			<div class="card-outer">
-				<div class="card-inner">
-					<h2>とが</h2>
-					<p>一応、名前のアクセントは「<span class="underline">と</span> <span class="overline">が」</span>のつもりです（「水」と同じ平板型）。</p>
-					<p>「<span class="overline endline">と</span> <span class="underline">が</span>」や「<span class="underline">と</span> <span class="overline endline">が</span>」ではありません。</p>
-				</div>
-			</div>
-			<div class="card-outer">
-				<div class="card-inner">
-					<h2>アイコン</h2>
-					<img width="108px" src="favicon.jpg"/>
-					<p><a href="https://x.com/Cafrette">@Cafrette</a> さんに書いていただきました。</p>
-				</div>
-			</div>
-			<div class="card-outer">
-				<div class="card-inner">
-					<h2>OSS Contribution</h2>
-					<p>Rust や Python ライブラリ SciPy などに貢献しています．</p>
-				</div>
-			</div>
-			<div class="card-outer">
-				<div class="card-inner">
-					<h2>競プロ</h2>
-					<p>使用言語：C / C++ / Rust</p>
-					<p><a href="https://atcoder.jp/users/toga57">AtCoder</a>, <a href="https://codeforces.com/profile/57tggx">Codeforces</a></p>
-					<ul>
-						<li>PCK 2017 … 本選出場（失われた太陽を求めて）</li>
-						<li>JOI 2018 … 本選出場</li>
-						<li>ICPC 2019 … アジア横浜地区大会出場（<b>t</b>hx_yucpc）</li>
-						<li>ICPC 2021 … アジア横浜地区大会出場（<b>t</b>oxic）</li>
-						<li>ICPC 2022 … アジア横浜地区大会出場（h<b>a</b>unting）</li>
-					</ul>
-				</div>
-			</div>
-			<div class="card-outer">
-				<div class="card-inner">
-					<h2>研究</h2>
-					<p>主に統計や AI をやっています。</p>
-					<p>Atsushi Komaba, Hisashi Johno, and Kazunori Nakamoto. A novel statistical approach for two-sample testing based on the overlap coefficient. <i>Journal of Mathematical Sciences, The University of Tokyo</i>, 30(2):205–240, 2023.</p>
-					<p>Ryota Tozuka, Hisashi Johno, Akitomo Amakawa, Junichi Sato, Mizuki Muto, Shoichiro Seki, Atsushi Komaba, and Hiroshi Onishi. Application of NotebookLM, a large language model with retrieval‑augmented generation, for lung cancer staging. <i>Japanese Journal of Radiology</i>, 2024. Online ahead of print.</p>
-					<p>他に日本磁気共鳴医学会、医療の質・安全学会など。</p>
-				</div>
-			</div>
-			<div class="card-outer">
-				<div class="card-inner">
-					<h2>登山</h2>
-					<p>一番印象に残っているのは槍ヶ岳（2022 年 9 月）です。</p>
-					<p>他に北岳（2022 年 7 月）、鳳凰三山（2023 年 8 月）、富士山（2024 年 7 月）、赤岳（2025 年 2 月）など。</p>
-				</div>
-			</div>
-			<div class="card-outer">
-				<div class="card-inner">
-					<h2>リンク</h2>
-					<ul>
-						<li>X: <a href="https://x.com/57tggx">@57tggx</a></li>
-						<li>Misskey: <a href="https://misskey.io/@five_seven">@five_seven@misskey.io</a> <a href="https://sushi.ski/@57">@57@sushi.ski</a></li>
-						<li>GitHub: <a href="https://github.com/fiveseven-lambda/">fiveseven-lambda</a></li>
-						<li>Zenn: <a href="https://zenn.dev/">toga</a></li>
-						<li>ORCID: <a href="https://orcid.org/0000-0002-4935-3945">0000-0002-4935-3945</a></li>
-					</ul>
-				</div>
-			</div>
+			<Card>
+				<h2>とが</h2>
+				<p>一応、名前のアクセントは「<span class="underline">と</span> <span class="overline">が」</span>のつもりです（「水」と同じ平板型）。</p>
+				<p>「<span class="overline endline">と</span> <span class="underline">が</span>」や「<span class="underline">と</span> <span class="overline endline">が</span>」ではありません。</p>
+			</Card>
+			<Card>
+				<h2>アイコン</h2>
+				<img width="108px" src="favicon.jpg"/>
+				<p><a href="https://x.com/Cafrette">@Cafrette</a> さんに書いていただきました。</p>
+			</Card>
+			<Card>
+				<h2>OSS Contribution</h2>
+				<p>Rust や Python ライブラリ SciPy などに貢献しています．</p>
+			</Card>
+			<Card>
+				<h2>競プロ</h2>
+				<p>使用言語：C / C++ / Rust</p>
+				<p><a href="https://atcoder.jp/users/toga57">AtCoder</a>, <a href="https://codeforces.com/profile/57tggx">Codeforces</a></p>
+				<ul>
+					<li>PCK 2017 … 本選出場（失われた太陽を求めて）</li>
+					<li>JOI 2018 … 本選出場</li>
+					<li>ICPC 2019 … アジア横浜地区大会出場（<b>t</b>hx_yucpc）</li>
+					<li>ICPC 2021 … アジア横浜地区大会出場（<b>t</b>oxic）</li>
+					<li>ICPC 2022 … アジア横浜地区大会出場（h<b>a</b>unting）</li>
+				</ul>
+			</Card>
+			<Card>
+				<h2>研究</h2>
+				<p>主に統計や AI をやっています。</p>
+				<p>Atsushi Komaba, Hisashi Johno, and Kazunori Nakamoto. A novel statistical approach for two-sample testing based on the overlap coefficient. <i>Journal of Mathematical Sciences, The University of Tokyo</i>, 30(2):205–240, 2023.</p>
+				<p>Ryota Tozuka, Hisashi Johno, Akitomo Amakawa, Junichi Sato, Mizuki Muto, Shoichiro Seki, Atsushi Komaba, and Hiroshi Onishi. Application of NotebookLM, a large language model with retrieval‑augmented generation, for lung cancer staging. <i>Japanese Journal of Radiology</i>, 2024. Online ahead of print.</p>
+				<p>他に日本磁気共鳴医学会、医療の質・安全学会など。</p>
+			</Card>
+			<Card>
+				<h2>登山</h2>
+				<p>一番印象に残っているのは槍ヶ岳（2022 年 9 月）です。</p>
+				<p>他に北岳（2022 年 7 月）、鳳凰三山（2023 年 8 月）、富士山（2024 年 7 月）、赤岳（2025 年 2 月）など。</p>
+			</Card>
+			<Card>
+				<h2>リンク</h2>
+				<ul>
+					<li>X: <a href="https://x.com/57tggx">@57tggx</a></li>
+					<li>Misskey: <a href="https://misskey.io/@five_seven">@five_seven@misskey.io</a> <a href="https://sushi.ski/@57">@57@sushi.ski</a></li>
+					<li>GitHub: <a href="https://github.com/fiveseven-lambda/">fiveseven-lambda</a></li>
+					<li>Zenn: <a href="https://zenn.dev/">toga</a></li>
+					<li>ORCID: <a href="https://orcid.org/0000-0002-4935-3945">0000-0002-4935-3945</a></li>
+				</ul>
+			</Card>
 		</main>
 	</div>
 	<footer>
@@ -118,14 +105,6 @@ import Layout from '../layouts/Layout.astro';
 		}
 	}
 
-	.card-outer {
-		padding: .5em;
-	}
-	.card-inner {
-		background-color: white;
-		padding: .5em 1em;
-		border-radius: 16px;
-	}
 	h2, p {
 		margin: .3em;
 	}
